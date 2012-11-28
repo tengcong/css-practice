@@ -1,0 +1,51 @@
+<style>
+  a[title][href]{color: red}
+  /* *[title]{color: orange} */
+  a[title]{color: silver}
+  a[href='www.baidu.com']{color: pink}
+  a[class='test what']{color: green}
+  .test{border: 1px solid red}
+  .what{background: yellow}
+  a[title~='XXX']{background: silver}
+
+  span[class*="cloud"] {font-style: italic;}
+  span[class^="bar"] {background: silver;}
+  span[class$="y"] {font-weight: bold;}
+
+
+  ul+ol {color: green}
+  li+li{color: pink}
+  /* ol + ul {color: red} not work */
+  ul > li{border: 1px solid green}
+  ul li{background: silver}
+</style>
+
+<a href='www.baidu.com' title='XXX yyy XXX'>xxx</a> <br>
+<a href='www.google.com'>nothing</a><br>
+<a class='test what' title='what'>what?</a> <br>
+
+difference between h1#page-title and h1[id="page-title"]
+<br>
+
+<span class="barren rocky">Mercury</span>
+<span class="cloudy barren">Venus</span>
+<span class="life-bearing cloudy">Earth</span>
+
+<br>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <ol>
+    <li>x</li>
+    <li>y</li>
+    <li>z</li>
+  </ol>
+</ul>
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+</ol>
