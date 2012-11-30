@@ -1,0 +1,16 @@
+<body>
+  <ol>
+    <li>Find all rules that contain a selector that matches a given element.</li>
+    <li>Sort by explicit weight all declarations applying to the element. Those rules marked !important are given higher weight than those that are not. Sort by ori- gin all declarations applying to a given element. There are three origins: author, reader, and user agent. Under normal circumstances, the author’s styles win out over the reader’s styles. !important reader styles are stronger than any other styles, including !important author styles. Both author and reader styles over- ride the user agent’s default styles.</li>
+    <li>Sort by specificity all declarations applying to a given element. Those elements with a higher specificity have more weight than those with lower specificity.</li>
+    <li>Sort by order all declarations applying to a given element. The later a declara- tion appears in the style sheet or document, the more weight it is given. Declara- tions that appear in an imported style sheet are considered to come before all declarations within the style sheet that imports them.</li>
+  </ol>
+<hr>
+
+The user agent is the application (usually a browser, such as Chrome or Firefox) that you are viewing the website with. User agents have a default stylesheet. You can inspect its properties with a tool like Chrome's Developer Tools feature.
+
+The "reader" is the web surfer viewing your site. Your site's visitors can optionally set their own stylesheets or custom rules (such as system colours or font preferences). They might do this out of personal preference, or because they have accessibility requirements.
+
+The author's stylesheet is the one explicitly linked to in the HTML of the website itself. I.e., it's the one that you created
+
+</body>
