@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title></title>
     <style type="text/css">
-      div{
+      .test1{
         font-size: 20px;
         background: rgb(20%, 60%, 80%);
+        margin-bottom: 3em;
       }
-      p{
-        background: rgb(20%, 60%, 100%);
-      }
-      .a{
+      .test1>p{
         height: 3em;
+        background: rgb(20%, 60%, 100%);
         /* height: auto; */
       }
     </style>
 </head>
 <body>
-    <div>
-      <p class='a'>
+    <div class='test1'>
+      <p>
       tetsetset<br/>
       tetsetset<br/>
       tetsetset<br/>
@@ -27,5 +26,28 @@
       tetsetset<br/>
       </p>
     </div>
+    <hr style='outline: 1px solid red;' />
+
+    <div style='border-top: 1px solid red; border-bottom: 1px solid red; height: 3em; background: rgb(20%, 60%, 80%);'>
+      <p style='height: 50%; background: rgb(20%, 60%, 100%);'>
+      Half as tall
+      </p>
+    </div>
+
+
+    <div style='height: auto; background: rgb(20%, 60%, 80%); '>
+      <p style='height: 50%; background: rgb(20%, 60%, 100%); background: rgb(80%, 40%, 40%)'>
+      Not half as tall, height reset to auto
+      </p>
+    </div>
+
+    <div style='height: auto; background: silver;border-top: 1px solid'>
+      <p style='margin-top: 2em; margin-bottom: 2em;background: rgb(80%, 40%, 40%)'>A paragraph</p>
+    </div>
+
+    <div style='height: auto; border-top: 1px solid; border-bottom:1px solid; background: silver;'>
+      <p style='margin-top: 2em; margin-bottom: 2em; background: rgb(80%, 40%, 40%)'>Another paragraph</p>
+    </div>
+
 </body>
 </html>
